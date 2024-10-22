@@ -21,12 +21,63 @@ nav {
 nav > button {
   height: 3rem;
   width: 6rem;
+  background-color: #ffde73;
+  border: 1px solid black;
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 #content {
-  border: 1px solid blue;
   background-color: #ffde73;
   min-height: 700px;
   width: 1000px;
   margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px;
+  padding: 5rem;
+}
+
+#title {
+  font-weight: bold;
+  background-color: #ffc60b;
+  border: 10px solid #c16a08;
+  font-size: 4em;
+  padding: 10px 50px;
+  /* margin: 5rem 0 10px; */
+}
+
+.info-box {
+  margin: 2rem;
+  padding: 20px 15px;
+  width: 500px;
+  border: 15px solid #c16a08;
+  background-color: #ffc60b;
+}
+
+.info-box * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.text {
+  word-spacing: 10px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box-title,
+.author {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.box-title {
+  margin-left: 20px;
+}
+
+.author {
+  margin-top: 20px;
 }
