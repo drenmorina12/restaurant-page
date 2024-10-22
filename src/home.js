@@ -4,10 +4,12 @@ function createTitle() {
   const div = document.createElement("div");
   div.setAttribute("id", "title");
 
-  const text = document.createElement("p");
-  text.textContent = "Beary's Breakfast Bar";
+  // const text = document.createElement("p");
+  // text.textContent = "Beary's Breakfast Bar";
 
-  div.appendChild(text);
+  // div.appendChild(text);
+
+  div.textContent = "Beary's Breakfast Bar";
   contentDiv.appendChild(div);
 }
 
@@ -32,9 +34,47 @@ function createFirstBox() {
   contentDiv.appendChild(div);
 }
 
-function createSecondBox() {}
+function createSecondBox() {
+  const div = document.createElement("div");
+  div.setAttribute("class", "info-box");
 
-function createThirdBox() {}
+  const boxTitle = document.createElement("p");
+  boxTitle.setAttribute("class", "box-title");
+  boxTitle.textContent = "Hours";
+
+  const text = document.createElement("p");
+  text.setAttribute("class", "text");
+  text.innerText = `Sunday: 8am - 8pm 
+          Monday: 6am - 6pm 
+          Tuesday: 6am - 6pm 
+          Wednesday: 6am - 6pm 
+          Thursday: 6am - 10pm 
+          Friday: 6am - 10pm 
+          Saturday: 8am - 10pm  `;
+
+  div.appendChild(boxTitle);
+  div.appendChild(text);
+
+  contentDiv.appendChild(div);
+}
+
+function createThirdBox() {
+  const div = document.createElement("div");
+  div.setAttribute("class", "info-box");
+
+  const boxTitle = document.createElement("p");
+  boxTitle.setAttribute("class", "box-title");
+  boxTitle.textContent = "Location";
+
+  const text = document.createElement("p");
+  text.setAttribute("class", "text");
+  text.innerText = "123 Forest Drive, Forestville, Maine";
+
+  div.appendChild(boxTitle);
+  div.appendChild(text);
+
+  contentDiv.appendChild(div);
+}
 
 function createHome() {
   createTitle();
