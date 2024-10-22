@@ -1,8 +1,6 @@
-import { electron } from "webpack";
-
 const contentDiv = document.querySelector("#content");
 
-function createHome() {
+function createTitle() {
   const div = document.createElement("div");
   div.setAttribute("id", "title");
 
@@ -13,36 +11,36 @@ function createHome() {
   contentDiv.appendChild(div);
 }
 
-// function createFirstBox() {
-//   const div = document.createElement("div");
-//   div.setAttribute("class", "info-box");
+function createFirstBox() {
+  const div = document.createElement("div");
+  div.setAttribute("class", "info-box");
 
-//   const text = document.createElement("p");
-//   text.setAttribute("class", "text");
-//   text.textContent = `Beary's has the best porridge! The atmosphere and customer service
-//   make you feel like you are sitting in the middle of the woods, eating
-//   like a bear! This is exactly the kind of place that I like to return
-//   to again and again.`;
+  const text = document.createElement("p");
+  text.setAttribute("class", "text");
+  text.textContent = `Beary's has the best porridge! The atmosphere and customer service
+  make you feel like you are sitting in the middle of the woods, eating
+  like a bear! This is exactly the kind of place that I like to return
+  to again and again.`;
 
-//   const author = document.createElement("p");
-//   author.setAttribute("class", "author");
-//   author.textContent = "Goldilocks";
+  const author = document.createElement("p");
+  author.setAttribute("class", "author");
+  author.textContent = "Goldilocks";
 
-//   div.appendChild(text);
-//   div.appendChild(author);
+  div.appendChild(text);
+  div.appendChild(author);
 
-//   contentDiv.appendChild(div);
-// }
+  contentDiv.appendChild(div);
+}
 
-// function createSecondBox() {}
+function createSecondBox() {}
 
-// function createThirdBox() {}
+function createThirdBox() {}
 
-// function createHome() {
-//   createTitle();
-//   createFirstBox();
-//   createSecondBox();
-//   createThirdBox();
-// }
+function createHome() {
+  createTitle();
+  createFirstBox();
+  createSecondBox();
+  createThirdBox();
+}
 
 export { createHome };
